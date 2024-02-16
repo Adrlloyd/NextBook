@@ -1,0 +1,47 @@
+@import "partials/navbar";
+@import "partials/sidebar";
+@import "partials/about";
+@import "partials/mood";
+@import "partials/quote";
+@import "partials/author";
+@import "partials/footer";
+@import "partials/previous_search";
+@import "partials/books_selection";
+@import "partials/authors_selection";
+
+:root{
+  --background-color: white;
+  --background-light: white;
+  --shadow-color: black;
+  --primary-color: maroon;
+  --text-color: black;
+  --text-light: grey;
+  --font-size: 16px;
+  --animation-speed: 1;
+}
+
+@function getAnimationDuration($duration: number){
+  @return calc($duration * var(--animation-speed));
+}
+
+*{
+  text-decoration: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: var(--font-size);
+  font-family: "Oswald", sans-serif;
+  padding-top: 55px;
+}
+
+.main{
+  padding-block: 3vw;
+}
+
+h2{
+  font-size: 35px;
+  color: var(--primary-color)
+}

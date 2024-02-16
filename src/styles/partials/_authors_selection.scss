@@ -1,0 +1,40 @@
+.authors-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 10px;
+}
+
+.author-bio{
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px var(--shadow-color);
+  .author-info{
+    padding: 10px;
+  }
+  .author-img{
+    height: 40%;
+    width: 100%;
+  }
+  .author-name{
+    color: var(--primary-color);
+    margin-bottom: 5px;
+  }
+  .author-desc{
+    color: var(--text-light);
+    font-size: 15px;
+  }
+  .author-genre{
+    color: var(--primary-color);
+    display: inline-block;
+    padding-top: 10px;
+  }
+  .author-link{
+    color: var(--primary-color);
+    display: inline-block;
+    padding-top: 10px;
+    &:hover{
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+  }
+}

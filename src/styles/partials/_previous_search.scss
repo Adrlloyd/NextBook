@@ -1,0 +1,39 @@
+.previous-searches{
+  display: block;
+}
+
+.ps-container{
+
+  .search-item{
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 5px;
+    margin: 10px 10px 10px 0;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 3px 6px var(--shadow-color);
+    &:hover{
+      background-color: grey;
+      border-radius: 5px;
+    }
+  }
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  justify-content: flex-end;
+  input, .btn{
+    height: 100%;
+  }
+  input{
+    min-width: 200px;
+    padding: 0 5px;
+    border-radius: 5px;
+  }
+  .btn{
+    padding: 8px;
+    border-radius: 5px;
+  }
+}

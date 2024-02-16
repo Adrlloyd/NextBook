@@ -1,0 +1,43 @@
+.books-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 10px;
+}
+
+.book-card{
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px var(--shadow-color);
+  .book-info{
+    padding: 15px;
+  }
+  .set-image{
+    z-index: -1;
+  }
+  .author-img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--background-light);
+    box-shadow: 0 1px 3px var(--shadow-color);
+    margin-top: -100px;
+    z-index: 1;
+  }
+  .book-title{
+    color: var(--primary-color);
+    margin-bottom: 5px;
+  }
+  .book-desc{
+    color: var(--text-light);
+    font-size: 15px;
+  }
+  .book-link{
+    color: var(--primary-color);
+    display: inline-block;
+    padding-top: 10px;
+    &:hover{
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+  }
+}

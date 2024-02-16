@@ -14,7 +14,7 @@ Open [http://localhost:3000] to view it in your browser. (if it doesnt load auto
 - All pages and elements move/interact based off screen size.
 - Books and Authors pages "update" each refresh.
 
-## Future improvements/implementations; (practice pjoject/time decisions)
+## Future improvements/implementations; (practice project/time decisions)
 - External API's to generate books, authors and the details/descriptions/images for said book/author.
 - Search function, and storage of previous searches.
 - Log in feature, to save your books/searches.

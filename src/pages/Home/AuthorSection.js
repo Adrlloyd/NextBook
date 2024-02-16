@@ -1,4 +1,4 @@
-import AuthorCard from "./AuthorCard"
+import AuthorCard from "../../components/AuthorCard"
 
 export default function AuthorSection(){
   const authors = [
@@ -39,12 +39,16 @@ export default function AuthorSection(){
       genre: "Fantasy"
     }
   ]
+
+  const AllAuthors = () => {
+    return authors.map(author => <AuthorCard key={author.name} author={author} />)
+  }
   
   return(
     <div className="author-section">
      <h2 className="title">Our Top Authors</h2>
      <div className="author-container">
-     {authors.map(author => <AuthorCard key={author.name} author={author} />)}
+       <AllAuthors />
      </div>
     </div>
   )

@@ -1,5 +1,5 @@
-import PreviousSearch from "../components/PreviousSearch"
-import BookCard from "../components/BookCard"
+import PreviousSearch from "../../components/PreviousSearch"
+import BookCard from "./BookCard"
 
 export default function Books(){
   const books = [
@@ -45,11 +45,15 @@ export default function Books(){
     },
   ].sort(() => Math.random() - 0.5)
 
+  const AllBooks = () => {
+    return books.map((book, index) => <BookCard key={index} book={book} />)
+  }
+
   return(
     <div>
       <PreviousSearch />
       <div className="books-container">
-        {books.map((book, index) => <BookCard key={index} book={book} />)}
+        <AllBooks />
       </div>
     </div>
   )

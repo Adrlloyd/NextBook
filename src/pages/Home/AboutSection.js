@@ -1,4 +1,4 @@
-import SetImage from "./SetImage"
+import SetImage from "../../components/SetImage"
 import { Link } from "react-router-dom"
 
 export default function AboutSection(){
@@ -13,6 +13,11 @@ export default function AboutSection(){
     "/img/books/book8.jpg",
     "/img/books/book9.jpg",
   ]
+
+  const AllImages = () => {
+    return images.map((src, index) => (<SetImage key={index} imgSrc={src} pt={"150%"} alt={"book"} />))
+  }
+
   return(
     <div className="section">
       <div className="column1">
@@ -23,9 +28,7 @@ export default function AboutSection(){
         <Link to="/books" className="btn"> Explore now </Link>
       </div>
       <div className="column2">
-        {images.map((src, index) => (
-           <SetImage key={index} imgSrc={src} pt={"150%"} />
-        ))}
+        <AllImages />
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
-import PreviousSearch from "../components/PreviousSearch"
-import AuthorBio from "../components/AuthorBio"
+import PreviousSearch from "../../components/PreviousSearch"
+import AuthorBio from "./AuthorBio"
 
 export default function Authors(){
   const authorsBio = [
@@ -42,12 +42,15 @@ export default function Authors(){
     }
   ].sort(() => Math.random() - 0.5)
 
+  const AllAuthors = () => {
+    return authorsBio.map(bio => <AuthorBio key={bio.name} bio={bio} />)
+  }
+
   return(
     <div>
       <PreviousSearch />
       <div className="authors-container">
-      {authorsBio.map(bio => <AuthorBio key={bio.name} bio={bio} />)}
-      
+        <AllAuthors />
       </div>
     </div>
   )

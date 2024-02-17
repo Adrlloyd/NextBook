@@ -3,9 +3,9 @@ import {
   Routes,
   Route } from "react-router-dom"
 
-import Home from "./pages/Home";
-import Books from "./pages/Books";
-import Authors from "./pages/Authors";
+import Home from "./pages/Home/Home";
+import Books from "./pages/Books/Books";
+import Authors from "./pages/Authors/Authors";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 

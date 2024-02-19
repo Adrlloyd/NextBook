@@ -5,7 +5,7 @@ export default function AuthorCard({author}){
  
   return(
     <div className="author-card">
-        <img src={author.img} />
+        <img src={author.img} alt="" />
       <div className="author-info">
         <h3 className="author-name">{author.name}</h3>
         <p className="book-count">Books: {author.books}</p>

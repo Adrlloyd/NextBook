@@ -12,7 +12,7 @@ app.use(cors());
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
-const router = require('/router');
+const router = require('./router');
 app.use('/router', router);
 
 app.get('/', (req, res) => {

@@ -23,12 +23,16 @@ app.get('/books', (req, res) => {
   res.send('books')
 })
 
+app.get('/books/id', (req, res) => {
+  res.send('bookid')
+})
+
 app.get('/authors', (req, res) => {
   res.send('authors')
 })
 
-app.all('*', (req, res) => {
-  res.send('not found')
+app.get('/authors/id', (req, res) => {
+  res.send('author/id')
 })
 
 app.listen(PORT, () => {

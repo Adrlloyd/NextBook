@@ -13,6 +13,7 @@ export default function Books(){
     const sortedBooks = response.data.books
   // randomizes it to match pages current functionality
     const randomizedBooks = sortedBooks.sort(() => Math.random() - 0.5)
+    console.log(randomizedBooks)
   // code below not working as expected WIP
     const AllBook = () => {
       return randomizedBooks.map((book, index) => <BookCard key={index} book={book} />)

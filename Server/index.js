@@ -12,27 +12,14 @@ app.use(cors());
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
-const router = require('./router');
-app.use('/router', router);
+const booksRoute = require('./routes/booksRoute');
+app.use('/', booksRoute);
+
+const authorsRoute = require('./routes/authorsRoute');
+app.use('/', authorsRoute);
 
 app.get('/', (req, res) => {
   res.send('homepage')
-})
-
-app.get('/books', (req, res) => {
-  res.send('books')
-})
-
-app.get('/books/id', (req, res) => {
-  res.send('bookid')
-})
-
-app.get('/authors', (req, res) => {
-  res.send('authors')
-})
-
-app.get('/authors/id', (req, res) => {
-  res.send('author/id')
 })
 
 app.listen(PORT, () => {

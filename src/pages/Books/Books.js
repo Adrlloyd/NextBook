@@ -1,7 +1,23 @@
 import PreviousSearch from "../../components/PreviousSearch"
 import BookCard from "./BookCard"
+import axios from "axios"
+
+
+
 
 export default function Books(){
+  // below axios code not implemented as currently not working, site still running of static array
+  axios.get('http://localhost:8000/books')
+  .then(function (response) {
+  // pulls out just the array of books data
+    const sortedBooks = response.data.books
+  // randomizes it to match pages current functionality
+    const randomizedBooks = sortedBooks.sort(() => Math.random() - 0.5)
+  // code below not working as expected WIP
+    const AllBook = () => {
+      return randomizedBooks.map((book, index) => <BookCard key={index} book={book} />)
+  }})
+  
   const books = [
     {
       title: "The Iliad",

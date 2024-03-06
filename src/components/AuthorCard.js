@@ -5,10 +5,10 @@ export default function AuthorCard({author}){
  
   return(
     <div className="author-card">
-        <img src={author.img} alt="" />
+        <img src={author.authorImg} alt="" />
       <div className="author-info">
         <h3 className="author-name">{author.name}</h3>
-        <p className="book-count">Books: {author.books}</p>
+        <p className="book-count">Books: {author.book_count}</p>
         <p className="author-genre">Genre: {author.genre}</p>
         <p className="author-icons">
           <FontAwesomeIcon icon={faFacebook} />

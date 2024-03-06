@@ -9,7 +9,6 @@ export default function Authors(){
     axios.get('http://localhost:8000/authors')
       .then((response) => {
         const sortedAuthors = response.data.authors
-        console.log(sortedAuthors)
         const randomizedAuthors = sortedAuthors.sort(() => Math.random() - 0.5)
         setAuthors(randomizedAuthors)
       })

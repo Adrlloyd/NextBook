@@ -1,11 +1,11 @@
-export default function AuthorBio({bio}){
+export default function AuthorBio({author}){
   return(
     <div className="author-bio">
-      <img className="author-img" src={bio.img} alt="bio" />
+      <img className="author-img" src={author.authorImg} alt="bio" />
       <div className="author-info">
-        <p className="author-name">{bio.name}</p>
-        <p className="author-desc">Ο Κωνσταντίνος Δημόπουλος είναι ένα λαμπρό ταλέντο στον κόσμο της λογοτεχνίας, γεννημένος και μεγαλωμένος στην Αθήνα. Με μια παθιασμένη αγάπη για τον γραπτό λόγο από πολύ μικρή ηλικία, ο Δημόπουλος αναδεικνύεται ως ένας συγγραφέας που συνδυάζει τη φιλοσοφία με την καλλιτεχνική έκφραση.</p>
-        <p className="author-genre">Genre: {bio.genre}</p>
+        <p className="author-name">{author.name}</p>
+        <p className="author-desc">{author.bio}</p>
+        <p className="author-genre">Genre: {author.genre}</p>
         <p><a className="author-link" href="#!">View Author</a></p>
       </div>
     </div>

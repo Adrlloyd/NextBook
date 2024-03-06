@@ -17,7 +17,7 @@ export default function MoodSection(){
   return(
     <div className="mood-section">
       <div className="column1m">
-        <img src="/img/books/book10.jpg" alt="book 10" />
+        <img src="/img/library.jpg" alt="book library" />
       </div>
       <div className="column2m">
         <h2 className="about-title">What are you in the mood for?</h2>

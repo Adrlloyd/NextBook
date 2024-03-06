@@ -1,6 +1,5 @@
 import SetImage from "../../components/SetImage"
 import { Link } from "react-router-dom"
-
 export default function AboutSection(){
   const images = [
     "/img/books/book1.jpg",
